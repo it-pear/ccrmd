@@ -1,0 +1,103 @@
+.my-effect {
+  transition: all 0.25s;
+  .q-ripple {
+    display: none;
+  }
+  &.h-primary {
+    .q-icon {
+      transition: all 0.25s;
+      &:hover {
+        color: $primary !important;
+      }
+      &:active {
+        opacity: 0.3;
+        color: $primary !important;
+      }
+    }
+  }
+  &.h-img {
+    img {
+      transition: all 0.25s;
+    }
+    &:hover {
+      img {
+        opacity: 0.6;
+      }
+    }
+    &:active {
+      img {
+        opacity: 0.3;
+      }
+    }
+  }
+  &.h-dark,
+  &.h-dark-lite {
+    .block {
+      transition: all 0.25s;
+    }
+    &:hover {
+      .q-focus-helper:before {
+        opacity: 0.7 !important;
+      }
+      .q-focus-helper:after {
+        opacity: 0 !important;
+      }
+    }
+    &:active {
+      .q-icon {
+        opacity: 0.3;
+      }
+      .block {
+        opacity: 0.2;
+      }
+    }
+  }
+  &.h-dark-lite {
+    .q-focus-helper {
+      display: none;
+    }
+    &:hover {
+      background: #ECECEC !important;
+    }
+  }
+  &.h-opacity {
+    .q-focus-helper {
+      opacity: 0 !important;
+    }
+    .q-focus-helper:before {
+      opacity: 0 !important;
+    }
+    .q-focus-helper:after {
+      opacity: 0 !important;
+    }
+    .q-item__label,
+    .q-icon,
+    .block {
+      transition: all 0.25s;
+    }
+    &:hover {
+      .q-item__label,
+      .q-icon,
+      .block {
+        opacity: 0.7;
+      }
+    }
+    &:active {
+      .q-item__label,
+      .q-icon,
+      .block {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.icon-effect {
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}

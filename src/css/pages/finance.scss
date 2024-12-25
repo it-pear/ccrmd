@@ -1,0 +1,318 @@
+.page-finance {
+  .header-btns {
+    padding-top: 43px;
+    @media (max-width: 772px) {
+      padding-top: 23px;
+      .q-btn {
+        margin-top: 5px;
+      }
+    }
+  }
+  .cards {
+    padding-top: 51px;
+    .finance-card {
+      width: calc(50% - 30px);
+      &:first-child {
+        margin-right: 30px;
+      }
+      &:last-child {
+        margin-left: 30px;
+      }
+      @media (min-width: 772px) and (max-width: 1440px) {
+        width: calc(50% - 15px);
+        &:first-child {
+          margin-right: 15px;
+        }
+        &:last-child {
+          margin-left: 15px;
+        }
+      }
+    }
+    @media (max-width: 772px) {
+      padding-top: 32px;
+      .finance-card {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-top: 5px;
+        &:first-child {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .finance-card {
+    border-radius: 10px;
+    border-color: $grey-3;
+    .q-separator {
+      background: $grey-3;
+    }
+    .q-card__section {
+      padding: 0;
+    }
+    .finance-card-section {
+      padding: 21px 21px 17px 23.5px;
+      & > .q-card__section {
+        flex: 1 1 100%;
+      }
+      .text-h5 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        color: black;
+        letter-spacing: -0.02em;
+        margin-top: 4.5px;
+      }
+      .finance-tabs {
+        padding-top: 30px;
+        margin-bottom: 14px;
+        .q-tabs__content {
+          .q-tab {
+            margin-right: 15px;
+            .q-tab__content {
+              .q-tab__label {
+                font-size: 16px;
+                color: $grey-5;
+                opacity: 0.3;
+                font-weight: 400;
+              }
+            }
+            &--active {
+              .q-tab__content {
+                .q-tab__label {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+      .finance-card__number {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: black;
+      }
+      .finance-card__procent {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: black;
+        margin-left: auto;
+        margin-right: 11px;
+        margin-top: 7px;
+      }
+    }
+    .toolbar {
+      width: 6px;
+      height: 63px;
+      margin-left: auto;
+      flex: 1 1 6px;
+      max-width: 6px;
+      margin-top: auto;
+      margin-right: 9px;
+      margin-bottom: 6px;
+      background: $grey-3;
+      border-radius: 3px;
+      position: relative;
+      .toolbar-procent {
+        width: 6px;
+        background: $primary;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .q-card__actions {
+      padding: 16px 21px 16px 27px;
+      .text-subtitle1 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.02em;
+        color: $grey-5;
+        .circle-warning {
+          display: none;
+        }
+      }
+      .circle-warning {
+        width: 26px;
+        height: 26px;
+        background: $grey-3;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s;
+        .q-ripple {
+          display: none;
+        }
+        &:hover {
+          background: $positive;
+          .q-icon {
+            color: white !important;
+            svg {
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 772px) {
+      .toolbar {
+        .toolbar-procent {
+          width: 6px !important;
+        }
+      }
+    }
+    @media (max-width: 772px) {
+      .finance-card-section {
+        padding: 21px 20px 17px 19px;
+        flex-wrap: wrap;
+        .text-h5 {
+          font-size: 18px;
+          line-height: 18px;
+          margin-top: 0;
+        }
+        .finance-tabs {
+          padding-top: 20px;
+          margin-bottom: 14px;
+          .q-tabs__content {
+            .q-tab {
+              margin-right: 10px;
+            }
+          }
+        }
+        .finance-card__number {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 18px;
+        }
+        .finance-card__procent {
+          font-weight: 500;
+          margin-right: 0;
+          margin-top: 4px;
+        }
+      }
+      .toolbar {
+        width: 100% !important;
+        height: 4px !important;
+        margin-left: auto;
+        flex: 0 0 100% !important;
+        max-width: 100%;
+        margin-top: 7px;
+        margin-right: 0;
+        margin-bottom: 0;
+        .toolbar-procent {
+          height: 4px !important;
+        }
+      }
+      .q-separator {
+        display: none;
+      }
+      .q-card__actions {
+        padding: 0px 20px 22px 19px;
+        border-top: none;
+        .text-subtitle1 {
+          line-height: 20px;
+          display: inline-block;
+          max-width: 90%;
+          span {
+            white-space: nowrap;
+          }
+          .circle-warning {
+            display: inline-block;
+            min-width: 18px;
+            min-height: 18px;
+            width: 18px;
+            height: 18px;
+            margin-left: 6px;
+            vertical-align: middle;
+            margin-bottom: 2px;
+            position: relative;
+            .q-icon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              font-size: 7px !important;
+            }
+          }
+        }
+        .circle-warning {
+          background: $grey-3;
+          display: none;
+        }
+      }
+    }
+  }
+  .operations {
+    padding-top: 21px;
+    margin-top: 61px;
+    border-top: 1px solid $grey-3;
+    .btn-effect {
+      .q-focus-helper {
+        opacity: 0 !important;
+      }
+      .q-icon {
+        font-size: 14px;
+      }
+      &:before {
+        border-color: rgba(0,0,0,0.3);
+      }
+      &:hover:before {
+        border-color: rgba(0,0,0,0.2);
+      }
+    }
+  }
+  .operations-tabs {
+    .q-tabs__content {
+      .q-tab {
+        margin-right: 19px;
+        .q-tab__content {
+          padding: 0;
+          .q-tab__label {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .q-table__container {
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  @media (max-width: 772px) {
+    .operations {
+      padding-top: 0;
+      margin-top: 24px;
+      border-top: none;
+
+    }
+    .operations-tabs {
+      .q-tabs__content {
+        .q-tab {
+          margin-right: 19px;
+          .q-tab__content {
+            padding: 0;
+            .q-tab__label {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .q-table__container {
+      margin-bottom: 40px;
+      margin-top: 30px;
+    }
+  }
+}

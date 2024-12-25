@@ -1,0 +1,214 @@
+.choise-category {
+  position: relative;
+  .q-btn {
+    border: 2px solid $grey-3;
+  }
+  .btn-active {
+    background: #FFFFFF !important;
+    border: 2px solid #73C949;
+    border-radius: 10px;
+    z-index: 2001;
+    position: relative;
+
+    &[aria-checked="true"] {
+      background: #FFFFFF;
+      border: 2px solid #73C949;
+      border-radius: 8px;
+    }
+    .q-btn__content {
+      .q-icon {
+        transform: rotate(45deg);
+      }
+    }
+  }
+  .choice-place {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 100%;
+    position: absolute;
+    right: calc(-100% + -40px);
+    top: -25px;
+    padding: 44px 37.5px 89px 37.5px;
+    z-index: 2001;
+    &-2 {
+      padding: 0 0 89px 0;
+    }
+    &-no-active-check {
+      .q-checkbox-choice {
+        &[aria-checked="true"] {
+          background: #F7F7F7;
+          border: 2px solid #ECECEC;
+          border-radius: 8px;
+        }
+      }
+    }
+    &:before {
+      content: '';
+      width: 7px;
+      height: 14px;
+      background-image: url(/icons/arrowe-choice.svg);
+      position: absolute;
+      left: -7px;
+      top: 50px;
+      display: block;
+      background-size: 100% 100%;
+    }
+    .q-checkbox {
+      margin: 0 2.5px;
+      margin-bottom: 5px;
+      background: #F7F7F7;
+      border: 2px solid #ECECEC;
+      border-radius: 8px;
+      &[aria-checked="true"] {
+        background: #FFFFFF;
+        border: 2px solid #73C949;
+        border-radius: 8px;
+      }
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      padding: 40px 37.5px 35px 37.5px;
+      border-bottom: 1px solid #F0F0F0;
+      .title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #000000;
+      }
+      .btn-close {
+        margin-left: auto;
+        width: 35px;
+        height: 35px;
+        background: #F0F0F0;
+        border-radius: 100%;
+        border: none;
+        transition: all 0.25s;
+        &:hover {
+          opacity: 0.7;
+        }
+        &:active {
+          opacity: 0.3;
+        }
+        &:before,
+        .q-focus-helper {
+          display: none;
+        }
+      }
+    }
+    .sec-btn {
+      display: flex;
+      align-items: center;
+      padding: 30px 0 27px 40px;
+      .q-btn {
+        padding: 0;
+        border: none;
+        min-height: auto !important;
+        &:first-child {
+          margin-right: 29px;
+        }
+        &:before,
+        .q-focus-helper {
+          display: none;
+        }
+        .block {
+          font-size: 16px;
+          line-height: 16px;
+          color: #444444;
+          font-weight: 400;
+        }
+      }
+    }
+    .sec-check {
+      padding: 0 37.5px 0 37.5px;
+    }
+  }
+  @media (max-width: 772px) {
+    .q-btn {
+      min-height: 43px !important;
+    }
+    .my-btn-custom-big {
+      padding: 0 17px 0 19px !important;
+    }
+    .choice-place {
+      border-radius: 8px;
+      width: 100%;
+      position: relative;
+      right: 0;
+      top: 14px;
+      left: 0;
+      padding: 29px 20px;
+      box-shadow: none;
+      &-2 {
+        padding: 0 0 29px 0;
+      }
+      &:before {
+        content: '';
+        width: 7px;
+        height: 14px;
+        background-image: url(/icons/arrowe-choice.svg);
+        position: absolute;
+        left: auto;
+        right: 20px;
+        top: -10px;
+        display: block;
+        background-size: 100% 100%;
+        transform: rotate(90deg);
+      }
+      .q-checkbox {
+        margin: 0 2px;
+        margin-bottom: 4px;
+      }
+      .q-checkbox-choice {
+        padding: 8.5px 12px;
+        border-radius: 4px !important;
+        .q-checkbox__label {
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+      .head {
+        padding: 16px 13px 16px 20px;
+        .title {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        .btn-close {
+          width: 26px;
+          height: 26px;
+          max-width: 26px;
+          max-height: 26px;
+          min-width: 26px;
+          min-height: 26px;
+          padding: 0;
+        }
+      }
+      .sec-btn {
+        display: flex;
+        align-items: center;
+        padding: 22px 0 27px 20px;
+      }
+      .sec-check {
+        padding: 0 18px 0 18px;
+      }
+    }
+  }
+}
+.choise-category-bcg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s;
+  &-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}

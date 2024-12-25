@@ -1,0 +1,2360 @@
+.page-contractor {
+  .head {
+    padding-top: 47px;
+    .select-section {
+
+      &:nth-child(2) {
+        margin-left: 30px;
+      }
+      &:nth-child(3) {
+        margin-left: 40px;
+      }
+      label {
+        color: $grey-5 !important;
+        span {
+          color: $grey-5 !important;
+        }
+      }
+    }
+  }
+  .choise-category {
+    margin-top: 37px;
+    order: 3;
+    flex: 0 0 100%;
+    .sec-check {
+      .q-checkbox {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        .q-checkbox__label {
+          .q-icon {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+    @media (max-width: 772px) {
+      margin-top: 20px;
+      order: 2;
+      padding-left: 15px;
+      border-bottom: 1px solid #F0F0F0;
+      padding-bottom: 16px;
+      .sec-check {
+        .q-checkbox {
+          margin-right: 4px;
+          margin-bottom: 4px;
+          padding: 6.5px 12px;
+          padding-right: 30px;
+          position: relative;
+          border-radius: 4px;
+          .q-checkbox__label {
+            font-size: 16px;
+            line-height: 16px;
+            .q-icon {
+              margin-left: 12px;
+              position: absolute;
+              right: 11px;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 772px) {
+    .sectiobn-btns {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 28px;
+      flex: 0 0 100%;
+      .q-btn {
+        max-width: max-content;
+        &:first-child {
+          margin-top: 5px;
+        }
+      }
+    }
+    .head {
+      padding-top: 37px;
+      position: relative;
+      left: -15px;
+      width: calc(100% + 30px);
+      .q-btn {
+        width: 100%;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 41px;
+        order: 1;
+        &:before {
+          border: none;
+          border-top: 1px solid $grey-3;
+          border-bottom: 1px solid $grey-3;
+        }
+        .q-btn__content {
+          flex-direction: row-reverse;
+          padding-left: 15px;
+          padding-right: 15px;
+          .block {
+            margin: 0;
+            font-size: 18px;
+            line-height: 18px;
+          }
+          .q-icon {
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
+      }
+
+      .select-section {
+        padding-top: 0;
+        padding-bottom: 7px;
+        margin-top: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        order: 3;
+        &:nth-child(2) {
+          margin-left: 0;
+        }
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+        .q-field {
+          flex: 1;
+          .q-icon {
+            margin-right: 6px;
+          }
+        }
+        .q-btn {
+          padding-top: 6px;
+          &:before {
+            border-top: none;
+          }
+          .q-btn__content {
+            flex-direction: row;
+          }
+        }
+      }
+      .choise-category {
+        order: 2;
+      }
+    }
+    // .sorted {
+    //   margin-top: 19px;
+    // }
+    .contractor-table {
+      margin-top: 26px;
+    }
+  }
+}
+
+
+.page-contractor-single {
+  padding-bottom: 0 !important;
+  .section-btns {
+    padding-top: 47px;
+    padding-bottom: 41px;
+    border-bottom: 1px solid $grey-3;
+    .q-btn {
+      margin-top: 5px;
+    }
+  }
+  .section {
+    flex-wrap: nowrap;
+    .sidebar {
+      max-width: 276px;
+      flex: 0 0 276px;
+      border-right: 1px solid $grey-3;
+      padding-bottom: 50px;
+      .avatar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 157px;
+          height: 157px;
+          border-radius: 10px;
+        }
+      }
+      .info {
+        background: #F7F7F7;
+        padding: 14px 21px 23px 9px;
+        border-top: 1px solid #F0F0F0;
+        border-left: 1px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
+        border-radius: 10px 0 0 10px;
+        position: relative;
+        &:after {
+          content: '';
+          width: 1px;
+          height: 10px;
+          background: $grey-3;
+          display: block;
+          left: -1px;
+          bottom: -1px;
+          position: absolute;
+        }
+        .q-list-user-info {
+          .q-item {
+            margin-right: 2px;
+          }
+          .link-whatsap {
+            margin-left: auto;
+          }
+          .link-insta {
+            margin-right: 0;
+          }
+        }
+        .reviews {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-right: 3px;
+          padding-top: 16px;
+          position: relative;
+          .q-tabs-reviews {
+            padding-left: 16px;
+            .q-tab {
+              .q-focus-helper {
+                display: none;
+              }
+              .q-icon {
+                svg {
+                  fill: rgba(0,0,0,0.2);
+                }
+              }
+              .q-tab__label {
+                color: black;
+              }
+              &--active {
+                .q-icon {
+                  svg {
+                    fill: $positive;
+                  }
+                }
+              }
+            }
+          }
+          .q-item__label {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            color: #000000;
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+      .city {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #444444;
+        border-left: 1px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
+        border-radius:0 0 0 10px;
+        padding: 16px 0 18px 26px;
+      }
+
+      .relative-content {
+        padding-left: 26px;
+        .company,
+        .info {
+          height: 0;
+          padding: 0;
+          overflow: hidden;
+          // transition: all 0.2s;
+          border: none;
+        }
+        .title {
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 18px;
+          color: #000000;
+          .status {
+            margin-left: 12px;
+          }
+        }
+        .status {
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+        }
+        .text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 16px;
+          color: #444444;
+          margin-top: 9px;
+          a {
+            overflow-wrap: break-word;
+            text-decoration: none;
+            color: #444444;
+          }
+        }
+        .info- {
+          &status {
+            margin-top: 51px;
+            padding-bottom: 0;
+          }
+          &mail {
+            margin-top: 31px;
+          }
+          &phone {
+            margin-top: 26px;
+          }
+          &adres {
+            margin-top: 28px;
+            max-width: 215px;
+            line-height: 20px;
+          }
+          &sait {
+            margin-top: 29px;
+          }
+        }
+
+
+
+        &.stiky {
+          padding-right: 33px;
+          position: sticky;
+          top: 89px;
+          .company,
+          .info {
+            height: auto;
+            overflow: visible;
+          }
+          .company {
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #F0F0F0;
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+            }
+            .name {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 18px;
+              color: #000000;
+              margin-left: 12px;
+            }
+          }
+          .info {
+            background: white;
+            padding: 8px 0 0 0;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #F0F0F0;
+            &:after {
+              display: none;
+            }
+            .q-list-user-info {
+              border-bottom: 1px solid #F0F0F0;
+              padding-bottom: 8px;
+              .q-item {
+                &:first-child {
+                  padding: 0;
+                }
+              }
+            }
+            .reviews {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              .q-tabs {
+                padding-left: 0;
+              }
+            }
+          }
+          .info-status-text {
+            display: none;
+          }
+
+          .info- {
+            &status {
+              margin-top: 13px;
+              padding-bottom: 13px;
+              border-bottom: 1px solid #F0F0F0;
+            }
+
+          }
+        }
+      }
+
+    }
+    .content {
+      max-width: 100%;
+      flex: 1 1 100%;
+      position: relative;
+      .foto-collage {
+        @media (min-width: 772px) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          background: white;
+          width: 100%;
+          padding: 0 40px;
+          z-index: 1;
+          transition: all 0.3s;
+          opacity: 0;
+          .scroll-sec {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            display: flex;
+            align-items: center;
+            scroll-behavior: smooth;
+            &::-webkit-scrollbar {
+              height: 0;
+              -webkit-appearance: none;
+              width: 0;
+              height: 0;
+              background: rgba(0,0,0,0);
+              display: none;
+            }
+          }
+          img {
+            max-height: 157px;
+            border-radius: 10px;
+            margin: 0 5px;
+          }
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width:  38px;
+            height: 257px;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+            z-index: 2;
+          }
+          &:before {
+            left: 40px;
+            transform: rotate(180deg);
+          }
+          &:after {
+            right: 40px;
+          }
+        }
+      }
+      .content-head {
+        padding-top: 45px;
+        padding-bottom: 30px;
+        .sections-btns {
+          padding-left: 40px;
+          .q-btn {
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 5px;
+            .q-focus-helper {
+              display: none;
+            }
+            &:before {
+              border: 2px solid currentcolor;
+            }
+            .block {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 18px;
+              color: #444444;
+            }
+          }
+        }
+        .description {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 26px;
+          color: #444444;
+          padding-left: 40px;
+          position: relative;
+        }
+      }
+
+      .info {
+        background: #F7F7F7;
+        padding: 22px 31px 22.5px 9px;
+        border-top: 1px solid #F0F0F0;
+        border-right: 1px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
+        border-radius: 0 10px 10px 0;
+        position: relative;
+        padding-left: 40px;
+        &:after {
+          content: '';
+          width: 1px;
+          height: 10px;
+          background: $grey-3;
+          display: block;
+          right: -1px;
+          bottom: -1px;
+          position: absolute;
+        }
+        .item {
+          .text {
+            font-size: 16px;
+            line-height: 16px;
+            color: #444444;
+            display: flex;
+            align-items: center;
+            .circle {
+              width: 26px;
+              height: 26px;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 13px;
+            }
+          }
+          .sum {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;
+            color: #000000;
+            margin-top: 15px;
+          }
+        }
+        .dolg {
+          margin-left: auto;
+        }
+        .share {
+          height: max-content;
+          min-height: auto;
+          padding: 0;
+          margin-left: auto;
+          position: relative;
+          top: 3px;
+          .q-focus-helper {
+            display: none;
+          }
+          .block {
+            font-size: 16px;
+            line-height: 16px;
+            color: #444444;
+            font-weight: 400;
+          }
+          .q-icon {
+            opacity: 0.3;
+            margin-left: 21px;
+          }
+        }
+      }
+      .region {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #444444;
+        border-right: 1px solid $grey-3;
+        border-bottom: 1px solid $grey-3;
+        border-radius: 0 0 10px 0;
+        padding: 16px 0 18px 40px;
+        display: flex;
+      }
+      @media (min-width: 772px) {
+        .region-mobile {
+          display: none;
+        }
+      }
+      .tab-section {
+        padding-left: 40px;
+        padding-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        padding-right: 25px;
+        border-bottom: 1px solid $grey-3;
+
+        .q-tabs {
+          // @media (min-width: 1440px) and (max-width: 1650px) {
+          //   .q-tabs__content {
+          //     width: 37vw;
+          //     overflow-x: scroll;
+          //   }
+          // }
+          // @media (min-width: 960px) and (max-width: 1440px) {
+          //   .q-tabs__content {
+          //     width: 37vw;
+          //     overflow-x: scroll;
+          //   }
+          // }
+          @media (min-width: 772px) and (max-width: 1440px) {
+            .q-tabs__content {
+              width: 100%;
+              overflow-x: visible;
+              .q-tab {
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+        .circle {
+          width: 26px;
+          height: 26px;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: auto;
+          position: relative;
+          top: -3px;
+        }
+      }
+
+      .q-tab-panels {
+        .q-tab-panel {
+          padding: 0;
+          .section {
+            .q-expansion-my {
+              border-top: none;
+              .q-expansion-item__container {
+                padding-left: 40px;
+              }
+            }
+            .desc-sec {
+              border: 1px solid #F0F0F0;
+              border-radius: 8px;
+              padding: 28px 0 19px 27px;
+              margin-top: 6px;
+              .title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+                color: #000000;
+              }
+              .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #444444;
+                margin-top: 18px;
+              }
+            }
+            .q-expansion-my-2 {
+              margin-top: 35px;
+              .sections-btns {
+                padding-left: 0;
+                margin-bottom: 12px;
+                .q-btn {
+                  border-radius: 8px;
+                  margin-top: 5px;
+                  &:before {
+                    border-width: 2px;
+                  }
+                }
+              }
+            }
+            .desc-sec-design {
+              flex-direction: row;
+              display: flex;
+              padding: 0;
+              min-height: 152px;
+              .information {
+                text-align: center;
+                flex: 0 0 152px;
+                padding: 30px 0 15px 0;
+                max-width: 152px;
+                border-right: 1px solid #F0F0F0;
+                .number {
+                  font-weight: 300;
+                  font-size: 50px;
+                  line-height: 50px;
+                  color: #444444;
+                }
+                .subtext {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #444444;
+                  margin-top: 20px;
+
+                }
+              }
+              .text {
+                position: relative;
+                padding: 31px 47px 0 33px;
+                margin-top: 0;
+              }
+            }
+            .q-expansion-design {
+              .contractor-list {
+                .q-item {
+                  padding-left: 26px;
+                  padding-right: 27px;
+                  .subtitle {
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+
+            .requisites {
+              .item {
+                margin-top: 40px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                .subtitle {
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 14px;
+                  text-transform: uppercase;
+                  color: $primary;
+                  margin-bottom: 3px;
+                }
+                .cell {
+                  margin-top: 19px;
+                  .title {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #000000;
+                  }
+                  .text {
+                    margin-top: 9px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #444444;
+                  }
+                }
+                .cell-text-hidden {
+                  margin-top: 35px;
+                  .text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #444444;
+                    height: 100px;
+                    overflow: hidden;
+                    position: relative;
+                    &:after {
+                      content: '';
+                      width: 100%;
+                      height: 36px;
+                      display: block;
+                      position: absolute;
+                      left: 0;
+                      bottom: 0;
+                      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+                      z-index: 1;
+                    }
+                    &.activated {
+                      height: auto;
+                      overflow: visible;
+                      &:after {
+                        display: none;
+                      }
+                    }
+                  }
+                  .q-btn-activated {
+                    margin-top: 14px;
+                    .q-focus-helper {
+                      display: none;
+                    }
+                    .q-btn__content {
+                      .block {
+                        font-size: 18px;
+                        line-height: 18px;
+                      }
+                      .q-icon {
+                        margin-left: 12px;
+                        transition: all 0.25;
+                      }
+                    }
+                    &.activated {
+                      .q-btn__content {
+                        .q-icon {
+                          transform: rotate(180deg);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            // страница общах проектов
+            .contractor-single-projects {
+              overflow: hidden;
+              .contractor-single-project-table {
+                padding: 40px 0 50px 40px;
+                .q-table {
+                  thead {
+                    .q-th__smaile {
+                      width: 65px;
+                      padding-left: 15px;
+                      .q-table__sort-icon--left {
+                        margin-left: 0;
+                      }
+                    }
+                    tr {
+                      th {
+                        &.sorted {
+                          i:after {
+                            bottom: -20px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  tbody {
+                    tr {
+                      td {
+                        padding: 10.5px 16px;
+                        .content {
+                          padding-top: 0;
+                        }
+                        &.q-td-{
+                          &emoji {
+                            .content {
+                              font-size: 24px;
+                            }
+                          }
+                          &adress {
+                            .content {
+                              font-weight: 500;
+                              font-size: 16px;
+                              line-height: 16px;
+                              color: #000000;
+                            }
+                          }
+                          &documents {
+                            text-align: right;
+                          }
+                          &action {
+                            width: 76px;
+                            .q-td__action {
+                              margin-left: auto;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            // внутренняя страница проекта
+            .contractor-project-info {
+              .head {
+                padding-top: 50px;
+                padding-left: 40px;
+                padding-bottom: 42px;
+                .top-info {
+                  align-items: flex-start;
+                  margin-bottom: 59px;
+                  .title {
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: -0.02em;
+                    color: #000000;
+                    flex: 1 1 calc(100% - 148px);
+                    max-width: calc(100% - 148px);
+                  }
+                  .q-btn {
+                    margin-left: auto;
+                  }
+                }
+                .desc-sec {
+                  padding: 26px 33px 31px 25px;
+                  .text {
+                    margin-top: 0;
+                  }
+                  .q-btn {
+                    margin-top: 30px;
+                  }
+                }
+                .data {
+                  display: flex;
+                  margin-top: 48px;
+                  .cell {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #444444;
+                  }
+                  .params {
+                    flex: 1 1 calc(100% - 200px);
+                    max-width: calc(100% - 200px);
+                    .cell {
+                      margin-bottom: 8px;
+                      &:first-child {
+                        min-height: 44px;
+                        margin-bottom: 15px;
+                      }
+                      strong {
+                        font-weight: 500;
+                        color: #000000;
+                      }
+                    }
+                  }
+                  .square {
+                    margin-left: auto;
+                    padding-right: 25px;
+                    .cell {
+                      margin-bottom: 35px;
+                    }
+                    .number {
+                      font-weight: 500;
+                      font-size: 55px;
+                      line-height: 55px;
+                      color: #000000;
+                      text-wrap: nowrap;
+                      sup {
+                        font-size: 30px;
+                        @media(max-width: 772px) {
+                          font-size: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+
+              }
+              .q-expansion-my-contactor-smeta {
+                padding-bottom: 6px;
+                .q-expansion-item__container {
+                  & > .q-item {
+                    padding: 35px 0 18px 0;
+                  }
+                }
+              }
+              .q-expansion-my-contractor-attached-files {
+                .contractor-list {
+                  .q-item {
+                    padding-left: 0;
+                    padding-right: 27px;
+                  }
+                }
+              }
+
+
+              .q-expansion-my-contractor-visual {
+                padding-bottom: 10px;
+                .q-card-visual-slider {
+                  padding-bottom: 0;
+                  .q-card__section {
+
+                    border: 1px solid #F0F0F0;
+                    border-radius: 10px;
+                    flex: 0 0 calc(50% - 20px);
+                    max-width: calc(50% - 20px);
+                    margin-bottom: 40px;
+                    transition: all 0.25s;
+                    &:nth-child(1n) {
+                      margin-right: 20px;
+                    }
+                    &:nth-child(2n) {
+                      margin-left: 20px;
+                      margin-right: 0;
+                    }
+                    .visual-slider {
+                      .q-list {
+                        .content {
+                          padding-top: 0;
+                          .q-item__section  {
+                            .q-tab-panels {
+                              height: 230px;
+                              .q-tab-panel,
+                              .q-panel {
+                                height: 230px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .q-card-prev {
+                padding-left: 40px;
+                padding-bottom: 50px;
+              }
+            }
+
+            .contractor-single-finance {
+              padding-bottom: 50px;
+              .q-table__container {
+                .q-table__middle {
+                  padding: 40px;
+                  padding-right: 5px;
+
+                }
+                .q-tr__transfer {
+
+                  .q-td-checkStatus {
+                    .q-td__check {
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 16px;
+                      color: #444444;
+                      display: flex;
+                      align-items: center;
+                      .q-icon {
+                        margin-left: 12px;
+                      }
+                    }
+                  }
+                }
+              }
+              .sec-btn {
+                padding-left: 40px;
+                // padding-top: 10px;
+              }
+            }
+
+            .contractor-single-documents {
+              padding-bottom: 50px;
+              .q-table__container {
+                .q-table__middle {
+                  padding-left: 40px;
+                  padding-top: 30px;
+                  padding-bottom: 40px;
+                  padding-right: 5px;
+                }
+                thead {
+                  transform: translateY(-50px);
+                }
+                tbody {
+                  tr {
+                    td {
+                      padding: 10.5px 16px;
+                      .content {
+                        padding-top: 0;
+                      }
+                      &.q-td-name {
+                        padding-left: 26px;
+                      }
+                      &.q-td-status {
+                        .row {
+                          flex-wrap: nowrap;
+                          .circle {
+                            display: none;
+                          }
+                        }
+                      }
+                      &.q-td-action {
+                        padding-right: 15px;
+                        .row {
+                          display: flex;
+                          justify-content: flex-end;
+                          .q-td__action {
+                            .q-btn__content {
+                              justify-content: center;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .q-table__bottom {
+                  @media (min-width: 772px) {
+                    min-height: 0;
+                  }
+                }
+              }
+              .sec-btn {
+                padding-left: 40px;
+              }
+            }
+
+            .contractor-single-reviews {
+              padding: 50px 0 50px 40px;
+              // .sec-btn {
+                // padding-top: 22px;
+              // }
+            }
+
+            .contractor-photos {
+              padding: 50px 0 10px 40px;
+              .q-card-visual-slider {
+                padding-bottom: 0;
+                box-shadow: none;
+                .q-card__section {
+
+                  border: 1px solid #F0F0F0;
+                  border-radius: 10px;
+                  flex: 0 0 calc(50% - 20px);
+                  max-width: calc(50% - 20px);
+                  margin-bottom: 40px;
+                  transition: all 0.25s;
+                  &:nth-child(1n) {
+                    margin-right: 20px;
+                  }
+                  &:nth-child(2n) {
+                    margin-left: 20px;
+                    margin-right: 0;
+                  }
+                  .security {
+                    .q-btn {
+                      .q-btn__content {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 16px;
+                      }
+                    }
+                  }
+                  .visual-slider {
+                    .q-list {
+                      .content {
+                        padding-top: 0;
+                        .q-item__section  {
+                          .q-tab-panels {
+                            height: 230px;
+                            .q-tab-panel,
+                            .q-panel {
+                              height: 230px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .contractor-photos-info {
+              padding: 50px 0 50px 20px;
+              .section-photo {
+                .head {
+                  padding-left: 20px;
+                }
+                .visuaisation-4in4,
+                .visuaisation-3in3
+                {
+                  display: flex;
+                  flex-wrap: wrap;
+                  padding-top: 10px;
+                  .item {
+                    flex: 0 0 calc(25% - 35px);
+                    max-width: calc(25% - 30px);
+                    margin: 0 20px;
+                    margin-top: 40px;
+                    &:nth-child(4n) {
+                      margin-right: 0;
+                    }
+
+                    .image {
+                      overflow: hidden;
+                      border: 1px solid #F0F0F0;
+                      border-radius: 10px;
+                      height: 11.5vw;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      img {
+                        width: 100%;
+                      }
+                      @media (min-width: 1060px) and (max-width: 1440px) {
+                        height: 9.5vw;
+                      }
+                    }
+                    .subtitle {
+                      font-weight: 500;
+                      font-size: 16px;
+                      line-height: 16px;
+                      color: #000000;
+                      margin-top: 13px;
+                    }
+                  }
+                }
+                .visuaisation-4in4 {
+                  .item {
+                    .image {
+                      position: relative;
+                      cursor: pointer;
+                      img {
+                        position: absolute;
+                        height: 100%;
+                        object-fit: cover;
+                      }
+                    }
+                  }
+                }
+                .visuaisation-3in3 {
+                  .item {
+                    flex: 0 0 calc(33.333333333% - 35px);
+                    max-width: calc(33.333333333% - 35px);
+                    margin: 0 20px;
+                    margin-top: 50px;
+                    position: relative;
+                    &:nth-child(4n) {
+                      margin-right: 20px;
+                    }
+
+                    &:nth-child(3n) {
+                      margin-right: 0;
+                    }
+
+                    .image {
+                      height: 15.9vw;
+                      img {
+                        position: absolute;
+                      }
+                    }
+                    .subtitle {
+                      margin-top: 20px;
+                    }
+                  }
+                }
+                .q-card-prev {
+                  padding-left: 20px;
+                  padding-top: 53px;
+                }
+              }
+            }
+
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+
+  @media (max-width: 772px) {
+    padding-bottom: 0 !important;
+    .section-btns {
+      padding-top: 24px;
+      padding-bottom: 0;
+      border: none;
+      .q-btn {
+        margin-top: 5px;
+      }
+    }
+    .section {
+      flex-wrap: wrap;
+      .foto-collage {
+        display: flex;
+        align-items: flex-start;
+        padding: 22px 20px;
+        border: 1px solid #F0F0F0;
+        border-radius: 10px;
+        overflow-y: scroll;
+        margin-bottom: 14px;
+        height: auto !important;
+        .scroll-sec {
+          display: flex;
+          align-items: flex-start;
+          overflow-y: scroll;
+          &::-webkit-scrollbar {
+            height: 0;
+            -webkit-appearance: none;
+            width: 0;
+            height: 0;
+            background: rgba(0,0,0,0);
+            display: none;
+          }
+        }
+        img {
+          width: auto;
+          height: 100px;
+          margin-right: 5px;
+          border-radius: 4px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .sidebar {
+        display: none;
+      }
+      .content {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        .content-head {
+          padding-top: 0;
+          padding-bottom: 0;
+          min-height: auto;
+          .sections-btns {
+            padding-left: 19px;
+            .q-btn {
+              padding: 8.5px 12px;
+              border-radius: 4px;
+              .block {
+                font-size: 16px;
+                line-height: 16px;
+                text-align: left;
+              }
+            }
+          }
+          .description {
+            margin-top: 30px;
+            padding-left: 19px;
+          }
+        }
+
+        .region-mobile {
+          border: 1px solid #F0F0F0 !important;
+          border-radius: 10px !important;
+          padding: 0 !important;
+          margin-top: 11px;
+          flex-direction: column;
+          .city,
+          .text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #444444;
+            padding: 14px 20px;
+          }
+          .city {
+            border-bottom: 1px solid #F0F0F0;
+            line-height: 16px;
+          }
+        }
+
+        .info-1 {
+          background: #F7F7F7;
+          border: 1px solid #F0F0F0;
+          border-radius: 10px;
+          margin-top: 10px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          &:after {
+            display: none;
+          }
+          .q-list-user-info {
+            border-bottom: 1px solid #F0F0F0;
+            padding: 6.5px 12px 5px 4px;
+            .q-item {
+              margin-right: 2px;
+            }
+            .link-whatsap {
+              margin-left: auto;
+            }
+            .link-insta {
+              margin-right: 0;
+            }
+          }
+          .reviews {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 11.25px 20px 11.25px 4px;
+            position: relative;
+            .q-tabs-reviews {
+              padding-left: 16px;
+              .q-tabs__content {
+                overflow: hidden;
+              }
+              .q-tab {
+
+                .q-focus-helper {
+                  display: none;
+                }
+                .q-icon {
+                  svg {
+                    fill: rgba(0,0,0,0.2);
+                  }
+                }
+                .q-tab__label {
+                  color: black;
+                }
+                &--active {
+                  .q-icon {
+                    svg {
+                      fill: $positive;
+                    }
+                  }
+                }
+              }
+              .q-tab:last-child[aria-selected="true"] .q-tab--active .q-icon svg {
+                fill: $negative;
+              }
+            }
+            .q-item__label {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 16px;
+              color: #000000;
+              position: relative;
+              top: 0px;
+            }
+          }
+        }
+        .info {
+          background: white;
+          padding: 26px 0 23px 0;
+          border: 1px solid #F0F0F0;
+          border-radius: 10px;
+          margin-top: 11px;
+          position: relative;
+          &:after {
+            display: none;
+          }
+          .item {
+            padding: 0 20px;
+            width: 100%;
+            .text {
+              position: relative;
+              width: 100%;
+              .circle {
+                margin-left: auto;
+                position: relative;
+                top: 30px;
+              }
+            }
+            .sum {
+              font-size: 24px;
+              line-height: 24px;
+              margin-top: 5px;
+            }
+          }
+          .dolg {
+            margin-left: 0;
+            margin-top: 16px;
+          }
+          .share {
+            padding: 13.5px 20px;
+            margin-left: 0;
+            position: relative;
+            top: 0;
+            width: 100%;
+            margin-top: 23px;
+            border-bottom: 1px solid #F0F0F0;
+            border-top: 1px solid #F0F0F0;
+            border-radius: 0;
+            .q-btn__content {
+              display: flex;
+            }
+            .q-icon {
+              margin-left: auto;
+            }
+          }
+
+          .desc {
+            padding-top: 5px;
+            padding-left: 20px;
+            .title {
+              display: flex;
+              align-items: center;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 16px;
+              margin-top: 23px;
+              color: #000000;
+              .status {
+                margin-left: 8px;
+              }
+            }
+            .status {
+              width: 5px;
+              height: 5px;
+              border-radius: 100%;
+            }
+            .text {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 16px;
+              color: #444444;
+              margin-top: 7px;
+              max-width: 215px;
+            }
+            .info-adres {
+              margin-top: 12px;
+            }
+            .info-sait {
+              margin-top: 29px;
+            }
+          }
+        }
+        .region-nomobile {
+          display: none;
+        }
+
+        // отдел разделения на секции
+        .tab-section {
+          padding-left: 0;
+          padding-top: 0;
+          margin-top: 30px;
+          padding-right: 0;
+          border: 1px solid $grey-3;
+          border-radius: 10px;
+          .circle {
+            display: none;
+          }
+          margin-bottom: 30px;
+        }
+
+        .q-tab-panels {
+          .q-tab-panel {
+            padding: 0;
+            .section {
+              .q-expansion-my {
+                padding-bottom: 30px;
+                .q-expansion-item__container {
+                  padding-left: 0;
+                  & > .q-item {
+                    padding: 0 !important;
+                    padding-top: 14px !important;
+                    min-height: auto;
+                    margin-bottom: 30px;
+                    border-top: 1px solid $grey-3;
+                    .title {
+                      font-weight: 500;
+                      font-size: 18px;
+                      line-height: 18px;
+                    }
+                  }
+                }
+              }
+              .btn-back {
+                margin-top: 30px;
+              }
+              .q-expansion-my-activity-category {
+                .q-expansion-my-2 {
+                  margin-top: 5px;
+                  border-top: none;
+                  background: #F7F7F7;
+                  border: 1px solid #F0F0F0;
+                  border-radius: 8px;
+                  padding: 18px 20px 20px 20px;
+                  .q-expansion-item__container {
+                    & > .q-item {
+                      padding: 0 !important;
+                      min-height: auto;
+                      margin-bottom: 12px;
+                      .title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                      }
+                    }
+                    .q-item__section {
+                      display: none;
+                    }
+                  }
+                  .sections-btns {
+                    padding-left: 0;
+                  }
+                }
+              }
+
+              .desc-sec {
+                padding: 18px 20px 20px 20px;
+                margin-top: 6px;
+                .title {
+                  font-size: 16px;
+                  line-height: 20px;
+                  color: #000000;
+                }
+                .text {
+                  line-height: 20px;
+                  margin-top: 14px;
+                }
+              }
+
+              .desc-sec-design {
+                flex-direction: column;
+                display: flex;
+                padding: 0;
+                .information {
+                  text-align: center;
+                  flex: 0 0 100%;
+                  padding: 20px 17px 20px 20px;
+                  max-width: 100%;
+                  border-right: none;
+                  border-bottom: 1px solid #F0F0F0;
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: space-between;
+                  align-items: center;
+                  .number {
+                    font-size: 40px;
+                    line-height: 40px;
+                  }
+                  .subtext {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-top: 0;
+                    text-align: left;
+                  }
+                }
+                .text {
+                  position: relative;
+                  padding: 17px 20px 28px 17px ;
+                  margin-top: 0;
+                }
+              }
+
+              .q-expansion-design {
+                .contractor-list {
+                  .q-item {
+                    padding: 17px 20px;
+                    .q-item__section {
+                      flex-wrap: wrap;
+                      .subtitle {
+                        margin-left: 0;
+                        flex: 0 0 100%;
+                        order: 1;
+                        margin-bottom: 15px;
+                      }
+                      .size {
+                        order: 4;
+                        margin-left: auto;
+                        margin-right: 0;
+                      }
+                      .q-icon {
+                        order: 2;
+                        margin-left: 0;
+                      }
+                      .format {
+                        order: 3;
+                        margin-left: 13px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .requisites {
+                background: #FFFFFF;
+                border: 1px solid #F0F0F0;
+                border-radius: 10px;
+                padding: 20px;
+                .item {
+                  margin-top: 27px;
+                  &:first-child {
+                    margin-top: 0;
+                  }
+                  .subtitle {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    color: $primary;
+                    margin-bottom: 0;
+                    white-space: break-spaces;
+                  }
+                  .cell {
+                    margin-top: 12px;
+                    .title {
+                      font-size: 16px;
+                      line-height: 20px;
+                    }
+                    .text {
+                      margin-top: 4px;
+                    }
+                  }
+                }
+              }
+
+              .contractor-single-projects {
+                overflow: hidden;
+                .sorted {
+                  margin-top: 0;
+                }
+                .contractor-single-project-table {
+                  padding: 21px 0 30px 0;
+                  overflow: visible;
+                  .q-table {
+                    padding-top: 0;
+                    border-spacing: 0 0;
+                    tbody {
+                      tr {
+                        position: relative;
+                        display: block;
+                        border: 1px solid $grey-3;
+                        margin-bottom: 5px;
+                        &:last-child {
+                          margin-bottom: 0;
+                        }
+                        td {
+                          padding: 25px 16px;
+                          border-bottom: none;
+                          border-top: none;
+                          &:first-child,
+                          &:last-child {
+                            border: none;
+                          }
+                          .content {
+                            padding-top: 0;
+                            padding-bottom: 0;
+                          }
+                          &.q-td-{
+                            &emoji {
+                              padding-right: 7px;
+                              .content {
+                                font-size: 24px;
+                              }
+                            }
+                            &adress {
+                              padding-left: 5px;
+                              .content {
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 16px;
+                                color: #000000;
+                              }
+                            }
+                            &documents {
+                              display: none;
+                            }
+                            &action {
+                              position: absolute;
+                              right: 10px;
+                              top: 0;
+                              bottom: 0;
+                              padding: 0;
+                              width: auto;
+                              margin: auto;
+                              background: white;
+                              display: flex;
+                              align-items: center;
+                              &:before {
+                                content: '';
+                                width: 30px;
+                                height: 20px;
+                                left: calc(-100% + -19px);
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 87.5%);
+                                position: absolute;
+                                z-index: 1;
+                                transform: rotate(-90deg);
+                              }
+                              .q-td__action {
+                                margin-left: 0;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .contractor-project-info {
+                padding-bottom: 20px;
+                border-radius: 10px;
+                .head {
+                  padding-top: 24px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  padding-bottom: 24px;
+                  border-top: 1px solid $grey-3;
+                  border-left: 1px solid $grey-3;
+                  border-right: 1px solid $grey-3;
+                  border-radius: 10px 10px 0 0;
+                  .top-info {
+                    margin-bottom: 21px;
+                    .title {
+                      font-weight: 700;
+                      font-size: 27px;
+                      line-height: 27px;
+                      color: #000000;
+                      flex: 1 1 100%;
+                      max-width: 100%;
+                    }
+                  }
+                  .desc-sec {
+                    padding: 0;
+                    background: white !important;
+                    border: none;
+                    .text {
+                      margin-top: 0;
+                    }
+                    .q-btn {
+                      margin-top: 24px;
+                      margin-left: 0;
+                    }
+                  }
+                  .data {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 24px;
+                    .cell {
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 16px;
+                      color: #444444;
+                    }
+                    .params {
+                      flex: 1 1 100%;
+                      max-width: 100%;
+                      .cell {
+                        margin-bottom: 8px;
+                        &:first-child {
+                          min-height: 44px;
+                          margin-bottom: 15px;
+                        }
+                      }
+                    }
+                    .square {
+                      margin-left: 0;
+                      padding-right: 0;
+                      margin-top: 16px;
+                      .cell {
+                        margin-bottom: 3px;
+                      }
+                      .number {
+                        font-size: 40px;
+                        line-height: 40px;
+                      }
+                    }
+                  }
+                }
+                .q-expansion-my {
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 1px solid $grey-3;
+                  border-right: 1px solid $grey-3;
+                  .q-expansion-item__container {
+                    & > .q-item {
+                      border-top: none;
+                      .custom {
+                        display: none;
+                      }
+                      .q-item__section--side {
+                        margin-left: auto;
+                      }
+                    }
+                    .btn-custom {
+                      margin: 0;
+                      width: 100%;
+                      margin-top: 20px;
+                    }
+                  }
+
+                }
+                .q-expansion-my-contactor-explication {
+                  .contractor-list-project {
+                    .q-item {
+                      border-radius: 0;
+                      padding-right: 0;
+                      .metrs {
+                        margin-right: 0;
+                        margin-left: auto;
+                        text-align: right;
+                      }
+                    }
+                  }
+                }
+                .q-expansion-my-contactor-smeta {
+                  padding-bottom: 0;
+                  .sorted {
+                    margin-top: 0;
+                    margin-bottom: 26px;
+                  }
+                  .q-expansion-item__container {
+                    padding-bottom: 30px;
+                    & > .q-item {
+                      padding: 35px 0 18px 0;
+                      margin-bottom: 23px;
+                    }
+                  }
+                }
+                .q-expansion-my-contractor-attached-files {
+                  .contractor-list-project {
+                    .q-item {
+                      border: 1px solid $grey-3;
+                      padding: 17px 20px 15px 20px;
+                      margin-top: 5px;
+                      &:first-child {
+                        margin-top: 0;
+                      }
+                      &:last-child {
+                        border-bottom: 1px solid $grey-3;
+                      }
+                      .q-item__section {
+                        flex-wrap: wrap;
+                        .subtitle {
+                          margin-left: 0;
+                          flex: 0 0 100%;
+                          order: 1;
+                          margin-bottom: 15px;
+                        }
+                        .size {
+                          order: 4;
+                          margin-left: auto;
+                          margin-right: 0;
+                        }
+                        .format {
+                          order: 3;
+                          margin-left: 13px;
+                        }
+                        .q-icon {
+                          order: 2;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .q-expansion-my-contractor-more-data {
+                  .q-expansion-item__container {
+                    .q-expansion-item__content {
+                      .requisites {
+                        border: none;
+                        padding: 0;
+                        .item {
+                          .cell {
+                            margin-top: 19px;
+                          }
+                          .cell-text-hidden {
+                            margin-top: 18px;
+                            .text {
+                              font-size: 16px;
+                              line-height: 20px;
+                              height: 120px;
+
+                              &.activated {
+                                height: auto;
+                                overflow: visible;
+                                &:after {
+                                  display: none;
+                                }
+                              }
+                            }
+                            .q-btn-activated {
+                              margin-top: 14px;
+                              .q-focus-helper {
+                                display: none;
+                              }
+                              .q-btn__content {
+                                .block {
+                                  font-size: 16px;
+                                  line-height: 20px;
+                                  text-transform: capitalize;
+                                }
+                                .q-icon {
+                                  margin-left: 9px;
+                                }
+                              }
+                              &.activated {
+                                .q-btn__content {
+                                  .q-icon {
+                                    transform: rotate(180deg);
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .q-expansion-my-contractor-visual {
+                  padding-bottom: 10px;
+                  .q-card-visual-slider {
+                    padding-bottom: 0;
+                    padding: 0;
+                    .q-card__section {
+                      border: 1px solid #F0F0F0;
+                      border-radius: 10px;
+                      flex: 0 0 100%;
+                      max-width: 100%;
+                      margin-bottom: 7px;
+                      transition: all 0.25s;
+                      padding-bottom: 22px;
+                      &:nth-child(1n) {
+                        margin-right: 0;
+                        margin-left: 0;
+                      }
+                      &:nth-child(2n) {
+                        margin-left: 0;
+                        margin-right: 0;
+                      }
+                      .visual-slider {
+                        .q-list {
+                          .content {
+                            padding-top: 0;
+                            .q-item__section  {
+                              .q-tab-panels {
+                                height: 169px;
+                                .q-tab-panel,
+                                .q-panel {
+                                  height: 169px;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .desc {
+                        padding-top: 19px;
+                        padding-left: 20px;
+                        .title {
+                          font-size: 18px;
+                          line-height: 18px;
+                          color: #000000;
+                          min-height: 24px;
+                        }
+                      }
+                      .security {
+                        padding-top: 3px;
+                        padding-left: 20px;
+                        .q-btn {
+                          background: white !important;
+                          padding: 0 !important;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .q-card-prev {
+                  padding-left: 40px;
+                  padding-bottom: 50px;
+                }
+                .contractor-project-info-q-card-prev {
+                  padding-left: 0;
+                  padding-bottom: 0;
+                  .q-btn {
+                    padding: 17px 0 !important;
+                    &:before {
+                      border-radius: 0px 0px 10px 10px;
+                    }
+
+                    .q-btn__content {
+                      .q-icon {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .contractor-single-finance {
+                padding-bottom: 30px;
+                .sorted {
+                  margin-top: 0;
+                  margin-bottom: 26px;
+                }
+                .q-table__container {
+                  .q-table__middle {
+                    padding: 0;
+                    padding-right: 0;
+                  }
+                  tbody {
+                    tr {
+                      td {
+                        &.q-td-project {
+                          flex: 0 0 calc(100% - 75px);
+                          max-width: calc(100% - 75px);
+                        }
+                        &.q-td-date {
+                          margin-top: 14px;
+                        }
+                      }
+                    }
+                  }
+                  .q-tr__transfer {
+                    position: relative;
+                    top: -10px;
+                    background: white;
+                    display: flex;
+                    align-items: center;
+                    .q-td-sum {
+                      .q-td__sum {
+                        opacity: 1;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #444444;
+                      }
+                    }
+                    .q-td-checkStatus {
+                      margin-left: auto;
+                      .q-td__check {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $positive;
+                        .q-icon {
+                          display: none;
+                        }
+                      }
+                    }
+                  }
+                }
+                .sec-btn {
+                  padding-left: 0;
+                  // padding-top: 15px;
+                  text-align: center;
+                  .btn-big {
+                    max-width: 250px;
+                    border-radius: 26px;
+                    min-height: 33px;
+                    .q-icon {
+                      display: none;
+                    }
+                  }
+                }
+              }
+
+              .contractor-single-documents {
+                padding-bottom: 30px;
+                .sorted {
+                  margin-top: 0;
+                }
+                .q-table__container {
+                  .q-table__middle {
+                    padding-left: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-right: 0;
+                  }
+                  thead {
+                    transform: translateY(0);
+                  }
+                  tbody {
+                    tr {
+                      display: flex;
+                      flex-wrap: wrap;
+                      border: 1px solid #F0F0F0;
+                      border-radius: 10px;
+                      margin-bottom: 5px;
+                      padding: 18px 20px 15px 20px;
+                      position: relative;
+                      td {
+                        padding: 0;
+                        border: none;
+                        flex: 0 0 100%;
+                        height: auto;
+                        margin-bottom: 4px;
+                        .content {
+                          padding-top: 0;
+                          padding-bottom: 0;
+                        }
+                        &.q-td-name {
+                          padding-left: 0;
+                          order: 1;
+                          flex: 0 0 calc(100% - 69px);
+                          max-width: calc(100% - 69px);
+                          margin-bottom: 14px;
+                        }
+                        &.q-td-changed {
+                          order: 4;
+                        }
+                        &.q-td-created {
+                          order: 3;
+                        }
+                        &.q-td-status {
+                          order: 5;
+                          .row {
+                            flex-wrap: nowrap;
+                            .circle {
+                              display: none;
+                            }
+                          }
+                        }
+                        &.q-td-action {
+                          order: 2;
+                          position: absolute;
+                          top: 5px;
+                          right: 0;
+                        }
+                      }
+                    }
+                  }
+                  .q-table__bottom {
+                    min-height: auto;
+                    .q-btn {
+                      padding: 8.5px 5px;
+                      border-radius: 26px;
+                      min-height: auto;
+                      .q-btn__content {
+                        justify-content: center;
+                      }
+                      .q-icon {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                .sec-btn {
+                  padding-left: 40px;
+                }
+              }
+
+              .contractor-single-reviews {
+                padding: 0 0 30px 0;
+                .sec-btn {
+                  padding-top: 0;
+                  text-align: center;
+                  .q-btn {
+                    padding: 8.5px 0;
+                    min-height: auto;
+                    border-radius: 26px;
+                    max-width: 250px;
+                    .q-icon {
+                      display: none;
+                    }
+                  }
+                }
+              }
+
+              .contractor-photos {
+                padding: 0;
+                padding-bottom: 30px;
+                .q-card-visual-slider {
+                  padding-bottom: 0;
+                  padding: 0;
+                  .q-card__section {
+                    border: 1px solid #F0F0F0;
+                    border-radius: 10px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin-bottom: 7px;
+                    transition: all 0.25s;
+                    padding-bottom: 22px;
+                    &:nth-child(1n) {
+                      margin-right: 0;
+                      margin-left: 0;
+                    }
+                    &:nth-child(2n) {
+                      margin-left: 0;
+                      margin-right: 0;
+                    }
+                    .visual-slider {
+                      .q-list {
+                        .content {
+                          padding-top: 0;
+                          padding-bottom: 0;
+                          .q-item__section  {
+                            .q-tab-panels {
+                              height: 169px;
+                              .q-tab-panel,
+                              .q-panel {
+                                height: 169px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .desc {
+                      padding-top: 19px;
+                      padding-left: 20px;
+                      .title {
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #000000;
+                        min-height: 24px;
+                      }
+                    }
+                    .security {
+                      padding-top: 3px;
+                      padding-left: 20px;
+                      .q-btn {
+                        background: white !important;
+                        padding: 0 !important;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .contractor-photos-info {
+                padding: 24px 0;
+                padding-bottom: 20px;
+                padding-top: 0;
+                .section-photo {
+                  margin-bottom: 0 !important;
+                  .head {
+                    padding-left: 20px;
+                    padding-top: 24px;
+                    border-top: 1px solid #F0F0F0;
+                    border-left: 1px solid #F0F0F0;
+                    border-right: 1px solid #F0F0F0;
+                    border-radius: 10px 10px 0px 0px;
+                  }
+                  .visuaisation-4in4,
+                  .visuaisation-3in3
+                  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-top: 10px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    border-left: 1px solid #F0F0F0;
+                    border-right: 1px solid #F0F0F0;
+                    padding-bottom: 20px;
+                    .item {
+                      flex: 0 0 calc(50% - 10px);
+                      max-width: calc(50% - 10px);
+                      margin: 0 5px;
+                      margin-top: 17px;
+                      &:nth-child(4n) {
+                        margin-right: 5px;
+                      }
+                      .image {
+                        border: none;
+                        border-radius: 6px;
+                        height: 37.6vw;
+                        @media (max-width: 340px) {
+                          height: 37.25vw;
+                        }
+                        img {
+                          height: 100%;
+                        }
+                      }
+                    }
+                  }
+
+                  .q-card-prev {
+                    padding-left: 0;
+                    padding-top: 0;
+                    .q-btn {
+                      border-radius: 0 0 10px 10px !important;
+                      padding: 17px 24px 17px 19px !important;
+                      .q-icon {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+
+.page-designers {
+  .head .q-btn {
+    padding-left: 0;
+  }
+  .head .q-btn {
+    @media (max-width: 772px) {
+      &:before {
+        border-top: 1px solid #F0F0F0 !important;
+      }
+    }
+  }
+}

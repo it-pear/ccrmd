@@ -1,0 +1,223 @@
+.emoji {
+  position: relative;
+  .emoji-div {
+    cursor: pointer;
+    font-size: 18px;
+    .q-icon {
+      opacity: 0.3;
+      transition: all 0.3s;
+      font-size: 18px !important;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.1;
+      }
+    }
+  }
+  .q-card {
+    background: #323232;
+    border-radius: 20px;
+    padding: 0;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    top: 70px;
+    transition: all 0.3s;
+    width: 100%;
+    
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .content {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 8px 0;
+      transition: all 0.3s;
+      margin-bottom: 0 !important;
+      .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 37px;
+        border-bottom: 1px solid rgba(240, 240, 240, 0.1);
+        padding-left: 36px;
+        padding-right: 36px;
+        .q-item__label {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 25px;          
+          color: #FFFFFF;
+          cursor: pointer;
+          @media (max-width: 772px) {
+            margin-left: auto;
+          }
+        }
+        .left,
+        .right {
+          opacity: 0.3;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .left {
+          margin-left: 10px;
+        }
+        .right {
+          margin-right: 10px;
+        }
+      }
+      .foot {
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        .q-tab-panels {
+          background: #323232;
+          .q-panel {
+            overflow: visible !important;
+          }
+          .q-tab-panel {
+            background: #323232;
+            padding: 26px 0;
+            padding-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .symbol {
+              flex: 0 0 calc(16.666% - 8px);
+              max-width: calc(16.666% - 8px);
+              margin: 4px;
+              span {
+                font-size: 24px;
+                min-height: 48px;
+                background: #222222;
+                border-radius: 10px;
+                transition: all 0.25s;
+                width: 100%;
+                display: block;
+                cursor: pointer;
+                text-align: center;
+                padding-top: 6px;
+                &:hover {
+                  background: rgba(0,0,0,0.7);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tabs {
+      transition: all 0.3s;
+      width: 100%;
+      height: 0;
+      min-height: 0;
+      overflow: hidden;
+      padding: 0;
+      opacity: 0;
+      background: #323232;
+      border-radius: 10px;
+      margin-bottom: 10px !important;
+      &.active {
+        opacity: 1;
+        height: auto;
+        min-height: auto;
+      }
+      .q-tabs {
+        width: 100%;
+        overflow: hidden;
+        .q-tabs__content {
+          flex-wrap: wrap;
+          padding: 30px;
+        }
+        .q-tab {
+          width: 100%;
+          min-height: 40px;
+          margin: 4px;
+          background: #222222;
+          border-radius: 10px;
+          transition: all 0.25s;
+
+          font-size: 14px;
+          line-height: 1.715em;
+          font-weight: 500;
+          color: white;
+          flex: 0 0 calc(33.333% - 8px);
+          max-width: calc(33.333% - 8px);
+          text-transform: capitalize;
+          &--active {
+            background: $primary;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 772px) {
+    .emoji-div {
+      font-size: 14px;
+    }
+    .q-card {
+      border-radius: 10px;
+      top: 50px;
+      width: 100%;
+      .content {
+        padding: 0;
+        .head {
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 0px;
+          padding-right: 0px;
+          min-height: 50px;
+          .q-item__label {
+            font-size: 18px;
+            line-height: 20px;          
+          }
+          .left,
+          .right {
+            font-size: 12px;
+          }
+        }
+        .foot {
+          margin-left: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          .q-tab-panels {
+            .q-tab-panel {
+              padding: 10px 0;
+              .symbol {
+                flex: 0 0 calc(16.666% - 8px);
+                max-width: calc(16.666% - 8px);
+                margin: 4px;
+                span {
+                  font-size: 24px;
+                  min-height: 40px;
+                  padding-top: 6px;
+                  font-size: 19px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .tabs {
+        .q-tabs {
+          .q-tabs__content {
+            padding: 10px;
+          }
+          .q-tab {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

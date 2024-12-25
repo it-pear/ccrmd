@@ -1,0 +1,270 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+
+  .--h50 {
+    height: 50px;
+
+    @media (max-width: 772px) {
+      height: 40px;
+    }
+  }
+
+  &__box--info {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  &__box--actions {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    // max-width: 308px;
+  }
+
+  .toggler {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    &__title {
+      color: #000;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__title.--disactive {
+      opacity: 0.3;
+    }
+
+    &__btn {
+      margin-left: auto;
+      padding: 5px;
+    }
+  }
+
+  .card-balance {
+    background-color: #fafafa;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+
+    &__header {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 33px 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__email {
+      color: #000;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    &__role {
+      color: #444444;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    &__content {
+      padding: 13px 25px 33px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__val span {
+      color: #444444;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__val-total {
+      color: #000000;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1;
+    }
+
+    &__btn {
+      align-self: flex-end;
+    }
+
+    @media (max-width: 1280px) {
+      &__header {
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      &__content {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      &__btn {
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 772px) {
+      &__header {
+        padding: 22px 20px;
+      }
+
+      &__content {
+        padding: 13px 20px 28px 20px;
+      }
+
+      &__val-total {
+        font-size: 27px;
+      }
+
+      &__btn {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .card-space {
+    @extend .card-balance;
+    padding: 33px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    &__text span {
+      color: #000;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    &__progress-line {
+      font-size: 6px;
+    }
+
+    @media (max-width: 772px) {
+      padding: 25px 20px 28px 20px;
+      gap: 20px;
+    }
+  }
+
+  .card-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 13px 0;
+
+    .card-btn {
+      border: none;
+      padding: 0;
+      padding-left: 20px;
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #444444;
+      // background-color: #fafafa; // TODO: Убрать после выполнения задачи
+      background-color: #f0f0f0;
+      text-align: left;
+      transition: all 0.25s;
+      cursor: pointer;
+
+      @media(hover:hover) {
+        &:hover {
+          background-color: #ECECEC;
+        }
+      }
+
+      span {
+        transition: all 0.25s;
+      }
+
+      &:active span {
+        opacity: 0.2;
+      }
+
+      &.--red {
+        color: #FF744C;
+        background-color: rgba(255, 115, 76, 0.1);
+        transition: all 0.25s;
+
+        @media(hover: hover) {
+          &:hover {
+            background-color: rgba(255, 115, 76, 0.2);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 772px) {
+      padding: 0;
+    }
+  }
+
+  .card-email {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 32px 20px 20px 20px;
+
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #444444;
+    }
+
+    @media (max-width: 772px) {
+      padding: 24px 20px;
+      border: 1px solid #f0f0f0;
+      border-radius: 10px;
+
+      .toggler {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 1168px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__box--actions {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 772px) {
+
+    &__box--info {
+      gap: 6px;
+    }
+
+    &__box--actions {
+      gap: 30px;
+    }
+  }
+}

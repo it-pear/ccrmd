@@ -1,0 +1,190 @@
+// effects
+
+.q-icon-info {
+  position: relative;
+  sup {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    border-radius: 100%;
+    background: $positive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 8px;
+    top: -12px;
+    .number {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 10px;
+      color: white;
+    }
+  }
+  .circle {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 100%;
+    top: -4px;
+    right: -4px;
+  }
+  @media (max-width: 772px) {
+    sup {
+      left: 12px;
+      top: -1.5px;
+    }
+    .circle {
+      top: 5px;
+      right: -9px;
+    }
+  }
+}
+
+.circle-close {
+  width: 40px;
+  height: 40px;
+  background: #F0F0F0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+  &.mini {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.circle-plus {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-shadow {
+  .q-checkbox__inner {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.circle-warning-15,
+.circle-warning-26 {
+  margin-left: 10px;
+  min-width: 15px;
+  max-width: 15px;
+  height: 15px;
+  background: #cccccc;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s;
+  position: relative;
+  .q-ripple {
+    display: none;
+  }
+  .q-icon {
+    color: white !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &:hover {
+    background: $positive;
+    .q-icon {
+      color: white !important;
+      svg {
+        color: white !important;
+      }
+    }
+  }
+}
+
+
+
+.my-input .q-field__marginal .q-icon {
+  opacity: 1;
+}
+
+.q-btn.circle-warning-15 {
+  min-height: 15px;
+  padding: 0;
+  .q-icon {
+    color: white !important;
+    font-size: 7px;
+    opacity: 1 !important;
+  }
+}
+
+
+.circle-warning-26 {
+  min-width: 26px;
+  height: 26px;
+  margin-left: 0;
+  background: #F0F0F0;
+  opacity: 1 !important;
+  .q-icon {
+    color: black !important;
+    opacity: 0.3;
+  }
+  &:hover {
+    background: $positive;
+    .q-icon {
+      color: white !important;
+      fill: white !important;
+      opacity: 1;
+      svg {
+        color: white !important;
+        fill: white !important;
+      }
+    }
+  }
+  &:active {
+    .q-icon {
+      color: white !important;
+      fill: white !important;
+      opacity: 1;
+      svg {
+        color: white !important;
+        fill: white !important;
+      }
+    }
+  }
+  @media (max-width: 772px) {
+    &.mb-19-grey {
+      min-width: 19px;
+      height: 19px;
+      background: #CCCCCC;
+      .q-icon {
+        font-size: 19px !important;
+        color: white !important;
+        fill: white !important;
+        opacity: 1;
+        svg {
+          color: white !important;
+          fill: white !important;
+        }
+      }
+      &:hover {
+        background: $positive !important;
+        .q-icon {
+          color: white !important;
+          fill: white !important;
+          opacity: 1;
+          svg {
+            color: white !important;
+            fill: white !important;
+          }
+        }
+      }
+    }
+  }
+}

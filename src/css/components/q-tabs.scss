@@ -1,0 +1,398 @@
+.q-tabs-null {
+  .q-tab {
+    min-height: auto;
+    padding: 0;
+    .q-focus-helper,
+    .q-ripple {
+      display: none;
+    }
+    .q-tab__content {
+      padding: 0;
+      min-width: auto;
+    }
+    .q-tab__indicator {
+      display: none;
+    }
+  }
+}
+.my-tabs {
+  .q-tabs__content {
+    .q-tab {
+      padding: 0;
+      min-height: auto;
+      flex: none;
+      border-radius: 8px;
+      transition: all 0.25s;
+      .q-focus-helper,
+      .q-ripple {
+        display: none;
+      }
+      .q-tab__content {
+        padding: 0;
+        .q-tab__label {
+          font-weight: 700;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          opacity: 0.15;
+          transition: all 0.25s;
+        }
+      }
+      &:hover {
+        .q-tab__content {
+          .q-tab__label {
+            opacity: 0.2;
+          }
+        }
+      }
+      &--active {
+        .q-tab__content {
+          .q-tab__label {
+            opacity: 1;
+          }
+        }
+        &:hover {
+          .q-tab__content {
+            .q-tab__label {
+              opacity: 1;
+            }
+          }
+        }
+        .q-tab__indicator {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+.q-tabs-reviews {
+  .q-tab {
+    padding: 0;
+    min-height: auto;
+    flex: 0 0 max-content;
+    .q-tab__content {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      color: white;
+      padding: 0;
+      padding-bottom: 3px;
+      .q-icon {
+        width: 18px;
+        font-size: 18px;
+        color: #d2d2d2 !important;
+        // color: black !important;
+        // opacity: 0.15;
+      }
+      .q-tab__label {
+        line-height: 1;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 7px;
+      }
+      &:hover {
+        .q-icon {
+          opacity: 0.7;
+        }
+      }
+    }
+    .q-tab__indicator,
+    .q-ripple {
+      display: none;
+    }
+    &--active {
+      .q-tab__content {
+        .q-icon {
+          color: $positive;
+        }
+      }
+      &:first-child {
+        .q-tab__content {
+          .q-icon {
+            color: $positive !important;
+            opacity: 1;
+            &:hover {
+              color: #66B836 !important;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .q-tab__content {
+          .q-icon {
+            color: $negative !important;
+            opacity: 1;
+            &:hover {
+              color: #EE5A30 !important;
+            }
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      margin-left: 17px;
+      .q-tab__content {
+        .q-icon {
+          position: relative;
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.q-tabs-contractor-status {
+  .q-tabs__content {
+    flex-direction: column;
+    .q-tab {
+      opacity: 1;
+      min-height: 42px;
+      background: #F7F7F7;
+      border: 2px solid #ECECEC;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      padding-left: 19px;
+      padding-right: 24px;
+      .q-tab__content {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .q-tab__label {
+        color: $grey-5;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+      }
+      .circle {
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+      }
+      &--active {
+        background: #FFFFFF;
+        border: 2px solid #CCCCCC;
+        .q-tab__label {
+          color: $grey-5 !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 772px) {
+    .q-tabs__content {
+      .q-tab {
+        min-height: 25px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+        padding-left: 13px;
+        padding-right: 10px !important;
+        .q-tab__content {
+          height: 24px;
+        }
+        .q-tab__label {
+          font-size: 14px;
+          line-height: 14px;
+        }
+        .q-icon {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.q-tabs-estimates {
+  .q-tab {
+    opacity: 0.3;
+    transition: all 0.25s;
+    border-radius: 100%;
+    position: relative;
+    .q-tab__content {
+      padding: 10px;
+    }
+    img,
+    .img-null {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      border-radius: 100%;
+    }
+    .img-null {
+      background: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: #FFFFFF;
+      }
+    }
+    &[aria-selected="true"] {
+      opacity: 1;
+      img,
+      .img-null {
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.q-tabs-role {
+  .q-tabs__content {
+    flex-wrap: wrap;
+    .q-tab {
+      border: 1px solid #E5E5E5;
+      border-radius: 10px;
+      flex: 0 0 calc(50% - 5px);
+      max-width: calc(50% - 5px);
+      opacity: 1;
+      margin-top: 42px;
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:last-child {
+        margin-left: 5px;
+      }
+      .q-tab__content {
+        padding: 0;
+        align-self: start;
+        .title {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: #000000;
+          text-transform: none;
+          text-align: left;
+          min-height: 20px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          padding-left: 20px;
+          border-bottom: 1px solid #E5E5E5;
+          width: 100%;
+        }
+        .text {
+          text-transform: none;
+          white-space: normal;
+          text-align: left;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #444444;
+          padding: 20px;
+        }
+      }
+
+      &[aria-selected="true"] {
+        border-color: $primary;
+          .q-tab__content {
+          .title {
+            border-bottom: 1px solid $primary;
+          }
+        }
+      }
+    }
+    @media (max-width: 772px) {
+      .q-tab {
+        border-radius: 6px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        opacity: 1;
+        margin-top: 10px;
+        &:first-child {
+          margin-right: 0;
+        }
+        &:last-child {
+          margin-left: 0;
+        }
+        .q-tab__content {
+          padding: 0;
+          align-self: start;
+          .title {
+            font-size: 16px;
+            min-height: 36px;
+            padding-top: 0;
+            margin-top: 13px;
+            padding-bottom: 0;
+          }
+          .text {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 15px;
+          }
+        }
+
+        &[aria-selected="true"] {
+          border-color: $primary;
+            .q-tab__content {
+            .title {
+              border-bottom: 1px solid $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.q-tabs-contractor {
+  .q-tabs__arrow--right {
+    display: none !important;
+  }
+  .q-tab {
+    margin-right: 30px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+    position: relative;
+    .q-tab__label {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    &--active {
+      border-bottom: 1px solid $primary;
+    }
+  }
+  @media (min-width: 772px) and (max-width: 1440px) {
+    .q-tab {
+      margin-right: 20px;
+    }
+  }
+  @media (max-width: 772px) {
+    width: 100%;
+    .q-tabs__content {
+      flex-direction: column;
+      width: 100%;
+      .q-tab {
+        padding: 15px 20px 0 20px;
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid $grey-3;
+        justify-content: flex-start;
+        &:last-child {
+          border-bottom: none;
+        }
+        .q-tab__label {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          color: #000000;
+          padding-bottom: 17px;
+          border-bottom: 1px solid rgba(0,0,0,0);
+        }
+        &--active {
+          .q-tab__label {
+            border-bottom: 1px solid $primary;
+          }
+        }
+      }
+    }
+  }
+}

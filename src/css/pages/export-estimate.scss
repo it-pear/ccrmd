@@ -1,0 +1,26 @@
+  .page-export {
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info {
+      padding-top: 52px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0f0f0;
+
+      .desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000000;
+      }
+    }
+
+    .table-container {
+      width: calc(100vw - 23.3vw);
+      margin-top: 40px;
+      margin-bottom: 62px;
+    }
+  }

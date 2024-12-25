@@ -1,0 +1,499 @@
+// app global css in SCSS form
+@import 'quasar.variables';
+
+// font
+@import 'stylesheet';
+
+// general style
+* {
+  font-family: 'graphik', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.text-h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: $dark;
+
+  @media (max-width: 772px) {
+    font-size: 27px;
+    line-height: 27px;
+  }
+}
+
+.rotate {
+  transition: all 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(180deg) !important;
+  }
+}
+
+.my-scrollbar {
+  &::-webkit-scrollbar {
+    height: 6px;
+    border-radius: 3px;
+    background: #F0F0F0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 3px;
+  }
+}
+
+a.q-btn {
+  display: flex;
+}
+
+a.q-btn.lg-visible {
+  @media (max-width: 772px) {
+    display: none;
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+
+  .circle {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+    border-radius: 50%;
+  }
+
+  .desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+    margin-left: 15px;
+  }
+}
+
+.q-list-share {
+  display: flex;
+
+  .q-item {
+    padding: 0;
+    min-height: auto;
+    margin-right: 5px;
+
+    .q-btn {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      min-height: auto;
+      border-radius: 100%;
+      overflow: hidden;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &:before {
+        box-shadow: none;
+      }
+
+      .q-focus-helper,
+      .q-ripple {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        image-rendering: -webkit-optimize-contrast;
+      }
+    }
+
+    .q-td-share__btn__limit {
+      .block {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: $grey-5;
+      }
+    }
+
+    .q-td-share__btn__add {
+      background: #F0F0F0;
+
+      .q-icon {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .q-item-add {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.q-tooltip,
+.circle-warning-tooltip {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  background: $grey-5;
+  padding: 10px 18px;
+
+  @media(max-width: 772px) {
+    padding: 8px 14px;
+  }
+}
+
+.circle-warning-tooltip {
+  width: auto;
+}
+
+.dropdown-none {
+  .q-btn-dropdown__arrow {
+    display: none !important;
+  }
+}
+
+.q-tooltip-estimates-img {
+  background: #333333;
+  border-radius: 10px;
+  padding: 20px;
+  height: 205px;
+  width: 205px;
+  overflow: hidden;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.q-tooltip-estimates-text {
+  background: #333333;
+  border-radius: 10px;
+  padding: 9.5px 13px;
+  height: auto;
+  width: 265px;
+  overflow: hidden;
+  padding-right: 0;
+
+  .text {
+    flex-wrap: nowrap;
+
+    .desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+
+      white-space: nowrap;
+      /* Текст не переносится */
+      overflow: hidden;
+      /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis;
+      padding-right: 13px;
+    }
+
+    .q-icon {
+      margin-right: 9px;
+    }
+  }
+}
+
+// временное решение надо перенести
+@media (max-width: 772px) {
+  .sorted {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 29px;
+
+    .sorted-section {
+      display: flex;
+
+      .title {
+        font-size: 16px;
+        line-height: 16px;
+        color: $grey-5;
+      }
+
+      .q-field {
+        min-height: auto;
+        height: auto;
+        margin-left: 5px;
+        min-width: 114px;
+        font-size: 16px;
+
+        .q-field__control,
+        .q-field__append,
+        .q-field__native,
+        .q-field__marginal,
+        .q-field__control-container {
+          min-height: auto;
+          height: auto;
+          padding: 0;
+
+          .q-select__dropdown-icon {
+            display: none;
+          }
+        }
+
+        .q-field__native {
+          span {
+            &:after {
+              content: '';
+              width: 8px;
+              height: 5px;
+              background: url(../assets/arrow-down.svg);
+              display: inline-block;
+              opacity: 0.3;
+              vertical-align: middle;
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+
+    .sorted-btns {
+      margin-left: auto;
+      margin-right: 16px;
+
+      .q-icon {
+        width: 23px;
+        height: 23px;
+        border-radius: 100%;
+        background: #F0F0F0;
+
+        svg {
+          opacity: 0.3;
+          font-size: 7px;
+          width: 7px;
+        }
+
+        // &:last-child {
+        //   margin-left: 6px;
+        // }
+        &.active {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .q-btn {
+      padding: 9.5px;
+
+      .q-icon {
+        margin-right: 0;
+      }
+
+      .block {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// layouts
+@import 'layout/main';
+@import 'layout/auth';
+@import 'layout/print-layout';
+
+// components
+@import 'components/essentiallink';
+@import 'components/q-field';
+@import 'components/q-btn';
+@import 'components/q-tabs';
+@import 'components/q-table';
+@import 'components/q-icon';
+@import 'components/my-effect';
+@import 'components/q-dialog';
+@import 'components/btn-date';
+@import 'components/q-menu';
+@import 'components/q-checkbox';
+@import 'components/emoji';
+@import 'components/q-chip';
+@import 'components/q-list';
+@import 'components/visual-slider';
+@import 'components/loader';
+@import 'components/no-date';
+@import 'components/q-notification';
+@import 'components/expansion';
+@import 'components/q-card';
+@import 'components/choise-category';
+@import 'components/btn-upload';
+@import 'components/dadata';
+@import 'components/menu-estimate-status';
+@import 'components/info-2';
+@import 'components/foto-gallery';
+
+// pages
+@import 'pages/finance';
+@import 'pages/projects';
+@import 'pages/contractor';
+@import 'pages/clients';
+@import 'pages/estimates';
+@import 'pages/profile';
+
+// mobile
+@media (min-width: 772px) {
+  .mb-visible {
+    display: none !important;
+  }
+}
+
+.lg-visible {
+  display: initial;
+}
+
+@media (max-width: 772px) {
+  .mb-visible {
+    display: initial;
+  }
+
+  .lg-visible {
+    display: none;
+  }
+}
+
+.q-ripple {
+  display: none;
+}
+
+.link-all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  &:before {
+    display: none;
+  }
+
+  .q-focus-helper {
+    display: none;
+  }
+}
+
+.no-border {
+  border: none;
+}
+
+.q-dialog__inner {
+  padding: 0;
+}
+
+.q-dialog__inner--minimized>div {
+  height: 100%;
+  width: 100%;
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+  border-radius: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+@media (min-width: 600px) {
+  .q-dialog__inner--minimized>div {
+    height: 100%;
+    width: 100%;
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+.no-data {
+  width: 100%;
+  min-height: 152px;
+  background: #F5F5F5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #444444;
+    opacity: 0.4;
+  }
+}
+
+.disable {
+  opacity: 0.3;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.print-hide {
+  @media print {
+    display: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.q-btn.disabled.btn-disable {
+  opacity: 0.1 !important;
+}
+
+// .q-icon {
+// transform: translate3d(0, 0, 0) !important;
+// }
+
+@media (max-width: 772px) {
+  .mb-no-mt {
+    margin-top: 0 !important;
+  }
+}
+
+.q-expansion-item__toggle-icon--rotated {
+  transform: rotate(180deg);
+}
+
+.q-spinner {
+  color: #ececec;
+}

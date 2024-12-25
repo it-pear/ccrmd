@@ -1,0 +1,124 @@
+.page-clients {
+  .sort-number-container {
+    min-height: 67px;
+    position: relative;
+  }
+  .sectiobn-btns {
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 772px) {
+    .sectiobn-btns {
+      flex: 0 0 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding-top: 28px;
+      align-items: center;
+      .q-btn {
+        padding: 9px 26px;
+        &:last-child {
+          margin-right: 4px;
+          padding-left: 18px;
+          padding-right: 26px;
+          .q-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .clients-table {
+      margin-top: 20px;
+    }
+    .sort-number {
+      margin-bottom: 27px;
+    }
+    .sort-number-container {
+      min-height: 141px;
+      position: relative;
+    }
+  }
+}
+
+.page-clients-single {
+  .head {
+    .sectiobn-btns {
+      margin-top: 39px;
+    }
+    .info-2 {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+  }
+  .foto-gallery {
+    .my-btn-custom-big {
+      margin-top: 40px;
+    }
+  }
+  .my-btn-custom-big-add {
+    max-width: 492px;
+    margin-top: 50px;
+  }
+  .projects {
+    .q-expansion-item__container > .q-item {
+      padding: 34px 0 31px 0;
+    }
+    .q-table__container {
+      padding-top: 0;
+      .q-table__middle {
+        overflow: hidden;
+      }
+      .q-table {
+        padding-top: 0;
+        thead {
+          display: none;
+        }
+      }
+    }
+  }
+  .documents {
+    .q-table__container {
+      .q-table {
+        padding-top: 0;
+        thead {
+          display: none;
+        }
+      }
+      .q-table__bottom {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 772px) {
+    .head {
+      .sectiobn-btns {
+        margin-top: 39px;
+        flex-direction: column;
+        padding-top: 0;
+        .q-btn {
+          margin-left: 0;
+          margin-bottom: 5px;
+          max-width: max-content;
+          .q-btn__content {
+            justify-content: flex-start;
+          }
+        }
+      }
+      .info-2 {
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+    }
+    .my-btn-custom-big-add {
+      max-width: 100%;
+      margin-top: 30px;
+      height: 43px;
+      .q-btn__content {
+        height: 43px;
+        .block {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

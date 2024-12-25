@@ -1,0 +1,61 @@
+.settings {
+  .toggler {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+
+    &__title {
+      color: #000;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__title.--disactive {
+      opacity: 0.3;
+    }
+
+    &__btn {
+      padding: 10px 0;
+    }
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &__toggler {
+    padding: 12px 0 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  @media (max-width: 772px) {
+    &__title {
+      font-size: 18px;
+      padding-bottom: 25px;
+    }
+
+    &__toggler {
+      padding: 16px 0 16px 0;
+    }
+
+    .toggler {
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+
+      .toggler__title {
+        font-size: 16px;
+      }
+
+      .toggler__btn {
+        padding-top: 5px;
+        order: 1;
+      }
+    }
+  }
+}

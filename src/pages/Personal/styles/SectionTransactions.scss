@@ -1,0 +1,62 @@
+.transactions {
+  &__title {
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  @media (max-width: 772px) {
+    &__title {
+      font-size: 18px;
+      padding-bottom: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .table {
+    .finance-table .q-table tbody tr td.q-td-type {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .finance-table .q-table tbody tr td {
+      height: 50px;
+    }
+
+    @media (max-width: 772px) {
+      .sorted {
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+
+      .finance-table .q-table tbody tr {
+        padding: 15px;
+      }
+
+      .finance-table .q-table tbody tr td {
+        height: auto;
+      }
+
+      .finance-table .q-table tbody tr td.q-td-date {
+        order: 0;
+        margin-top: 4px;
+      }
+
+      .finance-table .q-table tbody tr td.q-td-type {
+        order: 0;
+        margin-top: 12px;
+        min-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+    }
+  }
+}

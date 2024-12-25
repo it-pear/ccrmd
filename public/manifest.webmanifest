@@ -1,0 +1,17 @@
+{
+  "name": "Платформа CRMD",
+  "short_name": "CRMD",
+  "background_color":"#ffffff",
+  "icons": [
+    {
+      "src": "icons/favicons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/favicons/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

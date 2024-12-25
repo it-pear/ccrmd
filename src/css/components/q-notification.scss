@@ -1,0 +1,49 @@
+.q-notifications {
+  .q-notification {
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 6px 25px;
+    border-radius: 6px;
+    min-height: auto;
+    .q-icon {
+      display: none;
+    }
+    &.bg-positive {
+      border: 1px solid #5FBC31;
+    }
+    &.bg-negative {
+      border: 1px solid #E74A4A;
+    }
+    .q-notification__message {
+
+    }
+  }
+  .q-notification__badge {
+    display: none;
+  }
+  @media (max-width: 772px) {
+    .q-notification {
+      font-size: 14px;
+      padding: 0px 25px;
+    }
+  }
+}
+
+.my-tooltip-bottom {
+  overflow: visible;
+  &:before {
+    content: '';
+    width: 13px;
+    height: 6px;
+    display: block;
+    background: url(/icons/tooltipBottom.svg);
+    background-size: 13px 6px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
